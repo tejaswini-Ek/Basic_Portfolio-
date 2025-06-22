@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    color: white; 
+
+}
+
+  
+.portfolio{
+    /* height: 100%;
+    width: 100%; */
+    /* border:solid 2px brown; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+}
+
+.main {
+    margin-bottom: 40px;
+    scroll-margin-top: 80px;
+}
+
+#nav{
+     top:0; 
+    width: 100%;
+    height: 60px;
+    /* margin: 0px 100px 0px 100px; */
+    position: fixed;
+    /* border:solid 2px black; */
+    padding: 0 30px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     left:0;
+    z-index: 1000;
+}
+
+.logo_header{
+
+   display: flex;
+    /* justify-content: space-around;  */
+    align-items: center;
+
+}
+
+
+#logo{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#logo_header_content{
+    /* border: solid 2px brown; */
+    /* margin: 5px 20px 20px 4px; */
+    font-size: 1.2rem;
+}
+
+
+#header1{
+    display: flex;
+    gap:20px;
+    /* border: solid 2px brown; */
+    /* padding-top: 20px; */
+     flex-wrap: wrap;
+} 
+
+.header1_content{
+    /* border:solid 2px brown; */
+    /* margin-right: 14px; */
+    /* padding-bottom: 5px; */
+    font-size: 1.1rem;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    /* display: inline-block; */
+
+}
+
+.header1_content:hover{
+    transform: scale(1.1);
+    text-shadow: 3px 3px 25px 0.3s black ;
+    transition: transform 0.3s ease;
+
+}
+
+/* Hero Section */
+#hero_sec{
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.content {
+  /* margin: 30px 50px 5px 0px; */
+  animation: slide-in 3s ease-out 1s infinite forwards;
+  /* position: relative; */
+  max-width: 500px;
+  height: 190px;
+  /* background-color: rgba(99, 202, 236, 0.643); */
+  color: white;
+  font-weight: bold;
+  padding: 0 20px;
+  padding-top: 10px;
+  border-radius: 20px;
+  box-shadow:inset 0px 5px 15px rgba(65, 3, 2, 0.2);;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+#con_h1{
+    /* border: solid 2px brown; */
+   font-size: 2rem;
+    margin-bottom: 10px;
+    
+}
+
+#con_h3{
+    /* border: solid 2px brown; */
+    margin-bottom:20px ;
+    color:white;
+   
+}
+
+#hire_button{
+    /* border:solid 2px brown; */
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+    color: white;
+
+}
+
+#hire_button:hover{
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+#photo{
+    height: 220px;
+    width: 220px;
+    border:solid 2px white;
+    margin-right: 20px;
+    border-radius: 25%;
+    box-shadow:  3px 3px 10px black ;
+   object-fit:fill;
+   transition: transform 0.3s;
+}
+
+#photo:hover{
+transform: scale(1.05);
+/* transform: rotate(15deg); */
+}
+
+ul {
+  padding-left: 40px; 
+}
+
+
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}
+
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width:768px) {
+     #hero_sec{
+        flex-direction: column;
+        align-items: center;
+     }
+     
+     #header1 {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    #photo {
+        margin-top: 20px;
+    }
+  
+    #nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+}
